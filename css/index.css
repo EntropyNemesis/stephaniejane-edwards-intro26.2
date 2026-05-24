@@ -53,23 +53,23 @@ section {
     text-align: center;
 }
 
-.experience-1a, .experience-2a, .experience-3a {
+.experience-1a, .experience-2a, .experience-3a, .experience-4a, .experience-5a, .experience-6a, .experience-7a, .experience-8a {
     display: flex;
     align-items: flex-start;
 }
 
-.exp1a-left, .exp2a-left, .exp3a-left {
+.exp1a-left, .exp2a-left, .exp3a-left, .exp4a-left, .exp5a-left, .exp6a-left, .exp7a-left, .exp8a-left {
     display: flex;
     text-align: left;
 }
 
-.exp1a-right, .exp2a-right, .exp3a-right {
+.exp1a-right, .exp2a-right, .exp3a-right, .exp4a-right, .exp5a-right, .exp6a-right, .exp7a-right, .exp8a-right {
     display: flex;
     margin-left: auto;
     text-align: right;
 }
 
-.exp1b, .exp2b, .exp3b {
+.exp1b, .exp2b, .exp3b, .exp4b, .exp5b, .exp6b, .exp7b, .exp8b {
     display: flex;
     text-align: left;
 }
