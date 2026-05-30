@@ -9,8 +9,9 @@
     width: 100%;
 }
 
+
 .nav-container a {
-    color: white;
+    color: white;   
 }
 
 body {
@@ -81,6 +82,7 @@ section {
 
 .connect-links {
     display: flex;
+    justify-content: center;
     gap: 20px;
     align-items: center;
     text-align: center;
