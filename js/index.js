@@ -1,5 +1,5 @@
 const newItem = document.createElement('footer');
-document.appendChild('newItem');
+document.body.appendChild(newItem);
 const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('newItem');
