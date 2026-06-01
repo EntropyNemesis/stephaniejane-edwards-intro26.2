@@ -75,6 +75,11 @@ section {
     text-align: left;
 }
 
+#Skills {
+    display: flex;
+    text-align: left;
+}
+
 
 #Connect {
     text-align: center;
