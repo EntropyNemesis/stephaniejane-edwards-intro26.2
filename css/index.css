@@ -76,6 +76,14 @@ section {
 }
 
 
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
+
 #Connect {
     text-align: center;
 }
