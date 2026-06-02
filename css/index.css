@@ -75,12 +75,14 @@ section {
     text-align: left;
 }
 
-#Skills p {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-}
 
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
 
 #Connect {
     text-align: center;
