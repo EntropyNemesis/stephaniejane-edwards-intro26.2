@@ -69,9 +69,7 @@ fetch('https://api.github.com/users/EntropyNemesis/repos')
     }
         console.log(repositories);
     })
-    /*.catch(error => {
-        if (repositories.length === 0) {
-            console.error("No GitHub repositories are viewable at this time, please check back later.", error);
-        }   
-    })  */  ;
+    .catch(error => {
+        console.error("No GitHub repositories are viewable at this time, please check back later.", error);
+    });
 
