@@ -54,3 +54,24 @@ messageForm.addEventListener("submit", function(event) {
 
     messageForm.reset();
 });
+
+fetch('https://api.github.com/users/EntropyNemesis/repos')
+    .then(response => {
+        return response.json();
+    })
+    .then(repositories => {
+        const projectSection = document.querySelector('#Projects');
+        const projectList = projectSection.querySelector('ul');
+        for (let i=0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+    }
+        console.log(repositories);
+    })
+    /*.catch(error => {
+        if (repositories.length === 0) {
+            console.error("No GitHub repositories are viewable at this time, please check back later.", error);
+        }   
+    })  */  ;
+
