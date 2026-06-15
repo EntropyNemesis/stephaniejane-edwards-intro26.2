@@ -84,6 +84,14 @@ section {
     height: 100px;
 }
 
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
+
 form[name="leave_message"] {
     display: flex;
     flex-direction: column;
