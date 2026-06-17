@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Open API Weather Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "author" content="Stephanie Jane Edwards">
+    <link href="css/openapi.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-container"> 
+        <a href="index.html">Homepage</a>
+    </nav> 
+
+    <br>
+    <h1>Check Local Weather in Greensboro, NC</h1>
+
+    <section id="CurrentWeather">
+        <button type="button" id="CurrentWeatherBtn">Check Weather</button>
+        <p id="temperature"></p>
+        <p id="weather-condition"></p>
+    </section>
+    <br>
+
+    <section id="Forecast">
+        <button type="button" id="ForecastBtn">7-Day Forecast</button>
+        <ul id="forecast-list"></ul>
+    </section>
+
+    <p id="error-message"></p>
+
+
+<script src="js/openapi.js"></script>
+
+</body>
+</html>
