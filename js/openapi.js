@@ -18,6 +18,9 @@ const weatherDescriptions = {
 };
 
 async function getCurrentWeather() {
+    document.getElementById('temperature').innerText = '';
+    document.getElementById('weather-condition').innerText = '';
+    document.getElementById('error-message').innerText = '';
     try {
         const url = `${BASE_URL}${COORDS}&current=temperature_2m,weathercode&temperature_unit=fahrenheit`;
         const response = await fetch(url);
@@ -43,19 +46,20 @@ async function getCurrentWeather() {
 }
 
 async function getForecast() {
-  try {
-    const url = `${BASE_URL}${COORDS}&daily=temperature_2m_max,weathercode&temperature_unit=fahrenheit&timezone=auto`;
+    document.getElementById('forecast-list').innerHTML = '';
+    document.getElementById('error-message').innerText = ''; 
+    try {
+        const url = `${BASE_URL}${COORDS}&daily=temperature_2m_max,weathercode&temperature_unit=fahrenheit&timezone=auto`;
 
-    const response = await fetch(url);
+        const response = await fetch(url);
 
-    const data = await response.json();
+        const data = await response.json();
 
-    const dates = data.daily.time;
-    const temps = data.daily.temperature_2m_max;
-    const codes = data.daily.weathercode;
+        const dates = data.daily.time;
+        const temps = data.daily.temperature_2m_max;
+        const codes = data.daily.weathercode;
 
-    const forecastList = document.getElementById('forecast-list');
-    forecastList.innerHTML = '';
+        const forecastList = document.getElementById('forecast-list');
 
 
     dates.forEach(function(date, index) {
