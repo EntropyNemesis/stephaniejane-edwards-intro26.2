@@ -1,3 +1,4 @@
+/* lines 2-16: styling and configuring navigation bar with flexbox */
 .nav-container {
     display: flex;
     gap: 25px;
@@ -14,6 +15,7 @@
     color: white;   
 }
 
+/* lines 19-29: styling the h1 page header */
 h1 {
     color:rgb(238, 230, 120);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -35,6 +37,7 @@ body {
     position: relative;
 }
 
+/* styling background color panels and borders for content sections */
 section {
     background-color: #9fd1cf;
     padding: 26px;
@@ -49,6 +52,7 @@ section {
     align-items: center;
 }
 
+/* using flexbox to configure and style the buttons that trigger API calls*/
 #CurrentWeather button, #Forecast button {
     display: flex;
     justify-content: center;
@@ -67,13 +71,4 @@ section {
 }
 
 @media screen and (min-width: 400px) {
-    form[name="leave_message"] {
-        gap: 1rem;
-        padding: 0.75rem;
-}
-
-    form[name="leave_message"] input, form[name="leave_message"] textarea, form[name="leave_message"] button {
-        font-size: 1rem;
-        min-height: 45px;
-  }
 }

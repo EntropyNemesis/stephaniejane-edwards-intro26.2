@@ -1,3 +1,4 @@
+/*lines 2-15: styling the naviation bar*/
 .nav-container {
     display: flex;
     gap: 25px;
@@ -8,7 +9,6 @@
     left: 0;
     width: 100%;
 }
-
 
 .nav-container a {
     color: white;   
@@ -54,6 +54,8 @@ section {
     text-align: center;
 }
 
+/*lines 59-78: using flexbox to configure a layout for text in the experience section, outlining a resume*/
+
 .experience-1a, .experience-2a, .experience-3a, .experience-4a, .experience-5a, .experience-6a, .experience-7a, .experience-8a {
     display: flex;
     align-items: flex-start;
@@ -92,6 +94,7 @@ section {
     height: 100px;
 }
 
+/* lines 98-140: using flexbox to style and configure a form for user messages */
 form[name="leave_message"] {
     display: flex;
     flex-direction: column;

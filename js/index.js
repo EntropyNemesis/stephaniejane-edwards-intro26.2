@@ -72,9 +72,9 @@ fetch('https://api.github.com/users/EntropyNemesis/repos')
 
         for (let i=0; i < repositories.length; i++) {
             const project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
             projectList.appendChild(project);
-    }
+        }
         console.log(repositories);
     })
     .catch(error => {
