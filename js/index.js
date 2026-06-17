@@ -9,7 +9,7 @@ footer.appendChild(copyright);
 
 
 const skills = ["geospatial analysis", "database administration", "data mining", "grant writing", "project management", "Javascript", "painting", "cooking"];
-const skillsSection = document.querySelector('#skills');
+const skillsSection = document.querySelector('#Skills');
 const skillsList = skillsSection.querySelector('ul');
 for (let i=0; i < skills.length; i++) {
     const skill = document.createElement('li');
