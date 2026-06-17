@@ -1,3 +1,4 @@
+//footer copywrite stamp with current year that automatically updates
 const newItem = document.createElement('footer');
 document.body.appendChild(newItem);
 const today = new Date();
@@ -7,7 +8,7 @@ const copyright = document.createElement('p');
 copyright.innerHTML = `\u00A9 Stephanie Jane Edwards ${thisYear}`;
 footer.appendChild(copyright);
 
-
+//Array and loop to populate list for Skills section
 const skills = ["geospatial analysis", "database administration", "data mining", "grant writing", "project management", "Javascript", "painting", "cooking"];
 const skillsSection = document.querySelector('#Skills');
 const skillsList = skillsSection.querySelector('ul');
@@ -22,6 +23,7 @@ for (let i=0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }); */
 
+//Messages section form, then second messages section to display output
 const messageForm = document.forms["leave_message"];
 
 messageForm.addEventListener("submit", function(event) {
@@ -55,6 +57,7 @@ messageForm.addEventListener("submit", function(event) {
     messageForm.reset();
 });
 
+//Github API fetch to display clickable repo links list in Projects section
 fetch('https://api.github.com/users/EntropyNemesis/repos')
     .then(response => {
         return response.json();
@@ -72,9 +75,9 @@ fetch('https://api.github.com/users/EntropyNemesis/repos')
 
         for (let i=0; i < repositories.length; i++) {
             const project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
             projectList.appendChild(project);
-    }
+        }
         console.log(repositories);
     })
     .catch(error => {
